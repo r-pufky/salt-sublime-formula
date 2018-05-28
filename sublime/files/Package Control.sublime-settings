@@ -1,0 +1,21 @@
+{
+  "bootstrapped": true,
+  "in_process_packages":
+  [
+  ],
+  "installed_packages":
+  [
+    "Alignment",
+    "BeyondCompare",
+    "Git",
+    "GitHub Flavored Markdown Preview",
+    "hextoASCII",
+    "HexViewer",
+    "Modific",
+    "Package Control",
+    "PowerShell",
+    "Powershell Help Generator",
+    "Theme - Soda",
+    "TrailingSpaces"
+  ]
+}

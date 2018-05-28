@@ -1,0 +1,4 @@
+{%- import_yaml "sublime/defaults.yaml" as defaults -%}
+
+{%- set sublime = salt['pillar.get']('sublime:lookup', defaults.sublime, merge=True) -%}
+{%- set config = salt['pillar.get']('sublime:config', {}) -%}

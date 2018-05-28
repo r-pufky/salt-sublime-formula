@@ -1,0 +1,15 @@
+sublime:
+  # Lookup values are set in defaults.yaml and may be overridden here.
+  lookup:
+    channel: stable
+
+  config:
+    channel: stable  # can be stable or dev
+    users:
+      - list
+      - of
+      - home
+      - dir
+      - users
+      - to
+      - manage

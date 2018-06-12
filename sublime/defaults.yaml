@@ -3,6 +3,8 @@ sublime:
 
   package: sublime-text
 
+  source: salt://sublime/files
+
   package_dependencies:
     - libgtk2.0-0
 

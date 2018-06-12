@@ -5,6 +5,11 @@ sublime:
 
   config:
     channel: stable  # can be stable or dev
+
+    # Where settings should be sourced from. Should be set somewhere within
+    # your environment. Watch out for namespace collisions with formula.
+    source: salt://binaries/sublime
+
     users:
       - list
       - of

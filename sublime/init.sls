@@ -31,7 +31,7 @@ sublime_install:
 /home/{{ usr }}/.config/sublime-text-3/Packages/User/Package Control.sublime-settings:
   file.managed:
     - onlyif: test ! -f '/home/{{ usr }}/.config/sublime-text-3/Packages/User/Package Control.sublime-settings'
-    - source: salt://sublime/files/Package Control.sublime-settings
+    - source: {{ config.get('source', sublime.source) }}/Package Control.sublime-settings
     - dir_mode: 0750
     - makedirs: True
     - user: {{ usr }}
@@ -41,7 +41,7 @@ sublime_install:
 /home/{{ usr }}/.config/sublime-text-3/Packages/User/Preferences.sublime-settings:
   file.managed:
     - onlyif: test ! -f /home/{{ usr }}/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-    - source: salt://sublime/files/Preferences.sublime-settings
+    - source: {{ config.get('source', sublime.source) }}/Preferences.sublime-settings
     - dir_mode: 0750
     - makedirs: True
     - user: {{ usr }}
